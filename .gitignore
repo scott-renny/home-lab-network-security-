@@ -1,0 +1,30 @@
+# Private key material — NEVER commit
+*.private
+*.key
+*.pem
+*.p12
+wg0.conf
+/etc/wireguard/
+ 
+# Actual config files with real IPs (use *.example versions instead)
+wg0.conf
+/config/*-real.*
+ 
+# Wazuh agent keys
+/var/ossec/
+ 
+# Log files
+*.log
+eve.json
+ 
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+ 
+# Screenshots with unredacted content
+screenshots/raw/
